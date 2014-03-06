@@ -1,1 +1,1 @@
-A dynamic webpage project designed to host audio-responsive animations.
+A music blog designed to generate content based on a users musical preferences.
