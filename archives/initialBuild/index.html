@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>R3 Printing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="The fastest, most affordable 3D print and scan in NYC.">
+  <meta name="author" content="R3 Printing">
+
+  <!-- Load The Story -->
+  <link id="the-story-css-file" href="css/the-story.min.css" rel="stylesheet" media="screen">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+
+<meta http-equiv=X-UA-Compatible content=IE=edge>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/ajaxfileupload.js"></script>
+  <script>
+  if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='js/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+  </script>
+  <script>
+        $(document).ready(function(){
+              $('.message').click(function(){       
+                  $(this).animate({top: -$(this).outerHeight()}, 500);
+              });
+              // Make send button change into "loading":
+              $('#send').on('click', function () {
+               $('#send').button('loading');
+               });
+              var options = { 
+                complete: function(response) 
+                {
+                    $('#modalBody').html(response.responseText);
+                    $('#myModal').modal({show:true});
+                    $('#send').button('reset');
+                }
+              }; 
+             $('#myForm').ajaxForm(options);
+        });   
+   </script>
+</head>
+
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="#">R3 Printing</a> 
+      </div>
+      <div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a title="Home" class="scroll brand-1" href="#Home">Home</a></li>
+          <li><a title="About Us" href="#About" class=" scroll brand-4">About Us</a></li>
+          <li><a title="Pricing" href="#Pricing" class="scroll brand-3">Pricing</a></li>
+          <li><a title="FAQ" href="#FAQ" class="scroll fadeto brand-4">FAQ</a></li>
+          <li><a title="Print" href="print.html">Print</a></li>
+          <li><a title="Scan" href="scan.html">Scan</a></li>
+          <li><a title="Contact Us" href="#Contact" class="scroll fadeto brand-3">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <!-- Home Page -->
+  <div id="Home" class="newsletter color-1">
+    <div class="inner-page">
+      <h2 class="page-headline">The fastest, most affordable 3D print and scan in NYC.</h2>
+    </div>
+    <div class="row inner-page">
+      <div class="col-md-4 col-md-pull-8">
+        <ul class="big-list">
+          <li><i></i> There's many reasons to love printing and scanning with R3.</li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+
+  <div class="clients color-1">
+      <div class="inner-page">
+        <h3 class="headline">Ready to print or scan?</h3>
+      </div>
+      <div class="inner-page row">
+        <ul class="clients list-inline">
+          <li><i></i> <a href="http://www.r3printing.com/print" >Print </a></li>
+          <li><i></i> <a href="http://www.r3printing.com/scan" >Scan</a></li>
+          <li><i></i> <a href="http://www.r3printing.com/free-objects" >Browse</a></li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+
+  <div class="sign-up color-2 visible-lg">
+    <div class="row inner-page">
+      <div class="col-md-12">
+        <h4 class="pull-left">Learn why more people are choosing to 3D print and scan with us every day.</h4>
+        <a href="#About" class="scroll btn btn-primary pull-right"><i class="fa fa-caret-down"></i> Scroll down</a>
+      </div>
+    </div>
+  </div> 
+  <!-- End Home Page-->  
+
+
+
+
+
+<!-- About Us page-->
+<div id="About" class="page color-3">
+  <div class="inner-page">
+    <h2 class="page-headline">About Us</h2>
+    <h4 class="headline">Learn why our customers love printing and scanning with us.</h4>
+
+
+
+</div>
+<div class="clients color-1">
+      <div class="inner-page">
+        <h2 class="page-headline">Ready to print or scan?</h2>
+      </div>
+      <div class="inner-page row">
+        <ul class="clients list-inline">
+          <li><i></i> <a href="http://www.r3printing.com/print" >Print </a></li>
+          <li><i></i> <a href="http://www.r3printing.com/scan" >Scan</a></li>
+          <li><i></i> <a href="http://www.r3printing.com/free-objects" >Browse</a></li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Pricing page -->
+  <div id="Pricing" class="page color-3">
+    <div class="inner-page">
+      <h2 class="page-headline">Pricing</h2>
+      <h4 class="headline">Plain and simple, no tricks. Here's how we price your orders:</h4>
+
+
+    </div>
+  </div>
+  <div class="clients color-1">
+      <div class="inner-page">
+        <h2 class="page-headline">Ready to print or scan?</h2>
+      </div>
+      <div class="inner-page row">
+        <ul class="clients list-inline">
+          <li><i></i> <a href="http://www.r3printing.com/print" >Print </a></li>
+          <li><i></i> <a href="http://www.r3printing.com/scan" >Scan</a></li>
+          <li><i></i> <a href="http://www.r3printing.com/free-objects" >Browse</a></li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+  </div>
+ 
+
+
+
+
+  <!-- FAQ page -->
+  <div id="FAQ" class="page color-4">
+    <div class="inner-page">
+      <h2 class="page-headline">Frequently Asked Questions</h2>
+    </div>
+    <div class="row inner-page">
+      <h4>Questions About R3 Printing:</h4>
+        <!-- Accordions -->
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+              <div class="panel-heading">
+                What is R3 Printing?
+              </div>
+            </a>
+            <div id="collapseOne" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>R3 Printing is your area's fastest, most affordable 3D printing and scanning service. At R3 Printing, you can take a virtual 3D file and make it into a physical object you can touch and feel. Or you can do the reverse: scan any physical object and turn it into a virtual 3D representation that you can modify, manipulate, and even print again! </p>
+                <p>Learn more about how 3D printing and scanning works below by clicking the next question below.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+              <div class="panel-heading">
+                How does 3D printing and scanning work?
+              </div>
+            </a>
+            <div id="collapseTwo" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>There are multiple methods to 3D print an object, but they all rely on the same principle: a 3D printer takes a raw material, like PLA plastic, and deposits it in layers, building an object layer by layer from the ground up. The thinner the layers, the less noticable they are. Our highest resolution is a 100 micron layer height, no thicker than a single sheet of paper, which allows for ultra-smooth 3D printed parts with structural and aesthetic qualities comparable to their injection-molded or CNC counterparts</p>
+                <p>The basic principle behind 3D scanning relies on a camera attached to a computer to be able to gauge distance. A regular camera can only see images, but cannot tell distance. Your brain can gauge distance because you have two eyes, and it calculates distance via the slight variations in the two images each eye produces. Our 3D scanners work in a very similar way, sometimes using multiple cameras to tell distance, and sometimes with the assistance of a laser.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+              <div class="panel-heading">
+                How can I contact R3 Printing?
+              </div>
+            </a>
+            <div id="collapseThree" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>You can contact us via our built-in web form on our <a href="http://www.r3printing.com/contact" >Contact</a> page, or reach out to us from your own email account at <a href="mailto: contact@r3printing.com" >contact@r3printing.com</a>. Also feel free to reach out via our social media pages, linked to at the bottom of every page.</p>
+                <p>We'd love to hear from you, so please feel free to reach out with questions, comments, concerns, suggestions, or just to say hello!</p>
+              </div>
+            </div>
+          </div>
+         <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse8">
+              <div class="panel-heading">
+                Where are you located?
+              </div>
+            </a>
+            <div id="collapse8" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>While our headquarters are located in Morningside Heights, our <a href="http://www.r3printing.com/automated-pickup-dropoff-kiosk" >Automated Pickup/Dropoff Kiosk</a> is at a different location. To pick up your prints or to drop off objects to be scanned, head to our <a href="http://www.r3printing.com/automated-pickup-dropoff-kiosk" >Automated Pickup/Dropoff Kiosk</a> at (address to be determined).</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+              <div class="panel-heading">
+                What is your pricing?
+              </div>
+            </a>
+            <div id="collapseFive" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>Our print pricing is based on the volume of plastic required to print your object. The cost of scanning is tiered. Each object is a flat fee depending on which tier it falls into. Tiers are determined by object size. Additional fees may apply for print and/or scan options such as expedited turnaround or finishing options.</p>
+                <p>Get more details on our <a href="http://www.r3printing.com/Pricing" >Pricing</a> page.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
+              <div class="panel-heading">
+                What payment options can I use?
+              </div>
+            </a>
+            <div id="collapseSix" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>We accept all major credit and debit cards as well as PayPal.</p>
+                <p>Use your credit/debit card or PayPal account to pay securely online or at our <a href="http://www.r3printing.com/automated-pickup-dropoff-kiosk" >Automated Pickup/Dropoff Kiosk</a>. All orders must be paid before the print or scan process can begin. </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven">
+              <div class="panel-heading">
+                Explain the logo.
+              </div>
+            </a>
+            <div id="collapseSeven" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>The funny-looking 'R' with the superscript '3' is actually a mathematical notation. The 'R' stands for 'real numbers' (yes, there is such a thing as imaginary numbers!), and the '3' superscript denotes a three-dimensional system. So mathematically speaking, our logo just says "3D Printing"!</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /Accordion -->
+
+<div style="height: 50px;">&nbsp;</div>
+
+<h4>Questions About Print and Scan Orders:</h4>
+        <!-- Accordions -->
+        <div class="panel-group" id="accordion">
+           <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+              <div class="panel-heading">
+                How do I place an order?
+              </div>
+            </a>
+            <div id="collapseFour" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>To submit your object for printing, head over to our <a href="http://www.r3printing.com/print" >Print</a> page and follow the steps. Your object must be in a watertight or manifold .stl file. For more information on this, head over to our <a href="http://www.r3printing.com/printing-help" >Printing Help</a> page or <a href="http://www.r3printing.com/contact" >Contact Us</a> if you need additional assistance. Once your object is submitted and payment is received, the printing process begins, and you will be notified when your print is complete and ready for pickup or has been shipped!</p>
+                <p>To submit an object for scanning, visit our <a href="http://www.r3printing.com/automated-pickup-dropoff-kiosk" >Automated Pickup/Dropoff Kiosk</a>. When your object has been scanned, it will be available for retreival and the .stl file of the scan will be emailed to you. Read more about scanning with us on the <a href="http://www.r3printing.com/scan" >Scan</a> page.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse9">
+              <div class="panel-heading">
+                What can I print?
+              </div>
+            </a>
+            <div id="collapse9" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>Pretty much anything! Your object must be a 'watertight' or 'manifold' .stl file for it to be accepted. For more information on this, head over to our <a href="http://www.r3printing.com/printing-help" >Printing Help</a> page or <a href="http://www.r3printing.com/contact" >Contact Us</a> if you need additional assistance. If you haven't designed your own object, you can browse a virtually bottomless library of printable objects on sites like <a href="http://www.thingiverse.com" >Thingiverse</a>. </p>
+                  <p>Past that, you are limited only by our maximum print size (24" L x 24" W x 24" H) and your imagination! Please note that certain objects might be banned by our <a href="http://www.r3printing.com/terms-of-use" >Terms of Use</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapsescan">
+              <div class="panel-heading">
+                What can I scan?
+              </div>
+            </a>
+            <div id="collapsescan" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>Anything our scanners can handle! Read more about our scanning capabilities on our <a href="http://www.r3printing.com/scan" >Scan</a> page.Check out the pricing system for scans on our <a href="http://www.r3printing.com/pricing" >Pricing</a> page.</p>
+                <p>Please note that certain objects might be banned by our <a href="http://www.r3printing.com/terms-of-use" >Terms of Use</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse10">
+              <div class="panel-heading">
+                What materials can I choose to print with?
+              </div>
+            </a>
+            <div id="collapse10" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>We print exclusively with PLA plastic. PLA (short for Polylactic Acid) is a biodegradable plastic derived from corn starch. It's green to produce and green to discard. You can even compost your prints to be extra friendly to the environment.</p>
+                <p>But just because we print in one type of plastic doesn't mean you don't have options! We offer a wide array of colors, and you can also choose from specialty options such as flexible PLA.</p>
+                <p>PLA is also non-toxic. PLA-printed parts are safe to be around children, though please know that PLA is not currently FDA approved, and should not be used as utensils and should be kept away from heat or hot liquids. Learn more about PLA's material properties on our <a href="http://www.r3printing.com/engineering" >Engineering</a> page.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse11">
+              <div class="panel-heading">
+                Do you design or assist with 3D models?
+              </div>
+            </a>
+            <div id="collapse11" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>Unfortunately, our current manpower doesn't allow us to do so. However, we would love to provide this service, so if you're an experienced 3D modeler, please <a href="http://www.r3printing.com/contact" >Contact Us</a> !</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse12">
+              <div class="panel-heading">
+                Do you offer discounts for students/educators?
+              </div>
+            </a>
+            <div id="collapse12" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>You bet!</p>
+                <p>Anyone with a .edu email address automatically gets a 10% reduction for any print or scan offer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse13">
+              <div class="panel-heading">
+                Do you offer volume discounts?
+              </div>
+            </a>
+            <div id="collapse13" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>Unfortunately, the very nature of 3D printing doesn't allow for volume discounts. It takes the same amount of time and plastic to print or scan each individual object in a large order as in a small one. But we're working hard to streamline our process so that we can offer you the lowest possible price on all of our services.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse14">
+              <div class="panel-heading">
+                What is the average turnaround time for print and scan orders?
+              </div>
+            </a>
+            <div id="collapse14" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>We pride ourselves on consistently getting our clients their prints and scans done and back in their hands in under a week and a half. However, during times of high demand or for large print orders, the turnaround time may increase slightly.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse15">
+              <div class="panel-heading">
+                Can I pick up my order instead of having it shipped?
+              </div>
+            </a>
+            <div id="collapse15" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>Absolutely! We recognize that receiving your print or scanned object in a timely manner is important, so we've made picking up orders very convenient with our <a href="http://www.r3printing.com/automated-pickup-dropoff-kiosk" >Automated Pickup/Dropoff Kiosk</a>. All you need to do is bring your order confirmation code with you either printed or on your mobile device, scan it in, and pick up your order!</p>
+                <p>Check out the <a href="http://www.r3printing.com/automated-pickup-dropoff-kiosk" >Automated Pickup/Dropoff Kiosk</a> page for more information about location and hours.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse16">
+              <div class="panel-heading">
+                Can I change or cancel my order?
+              </div>
+            </a>
+            <div id="collapse16" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>All of our orders are custom, so once an order is submitted, the fulfillment process begins and we can no longer change or cancel it. For more information visit our <a href="http://www.r3printing.com/order-policy" >Order Policy</a> page or <a href="http://www.r3printing.com/contact" >Contact Us</a> and we will be happy to assist you.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse17">
+              <div class="panel-heading">
+                Can I add to an existing order?
+              </div>
+            </a>
+            <div id="collapse17" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>Once an order is submitted, the fulfillment process begins and we can no longer change or cancel it. But if you would like to print or scan more objects, simply submit a new order. There's no price incentive to print or scan all in one order. For more information visit our <a href="http://www.r3printing.com/pricing" >Pricing</a> page or <a href="http://www.r3printing.com/contact" >Contact Us</a> and we will be happy to assist you.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse18">
+              <div class="panel-heading">
+                I received my order, but something's wrong with it.
+              </div>
+            </a>
+            <div id="collapse18" class="accordion-body collapse">
+              <div class="panel-body">
+                <p>We're sorry to hear that! But don't worry, we'll do everything we can to make it right. Please <a href="http://www.r3printing.com/contact" >Contact Us</a> and we will make sure that you are connected to the right department, where an R3 Printing service representative will work with you personally to set things right.</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /Accordion -->
+      </div>
+    </div>  <!-- /row -->
+
+    <div style="height: 50px;">&nbsp;</div>
+
+<div class="clients color-1">
+      <div class="inner-page">
+        <h2 class="page-headline">Ready to print or scan?</h2>
+      </div>
+      <div class="inner-page row">
+        <ul class="clients list-inline">
+          <li><i></i> <a href="http://www.r3printing.com/print" >Print </a></li>
+          <li><i></i> <a href="http://www.r3printing.com/scan" >Scan</a></li>
+          <li><i></i> <a href="http://www.r3printing.com/free-objects" >Browse</a></li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+
+
+
+  <!-- Contact page -->
+  <div id="Contact" class="page color-3">
+  
+   <div class="inner-page">
+      <h2 class="page-headline">Contact Us</h2>
+      <h4 class="headline">Questions, suggestions, or just saying hello, we're eager to hear from you.</h4>
+    </div>
+    <div class="row inner-page" style="margin-top:0px">
+      <div class="col-md-8 col-md-offset-2">
+             <!-- FORM -->
+              <div class="container">
+                <form class="form-horizontal" id="myForm" method="post" role="form" action="contact.php">             
+                  <!-- Personal Information -->                
+                  <div class="form-group">  
+                    <div class="col-sm-6">
+                      <label for="firstName" class="control-label">First Name</label>
+                      <input id="firstName" name="firstName" type="text" class="form-control" placeholder="First Name" required> 
+                    </div>  
+                    <div class="col-sm-6">
+                      <label for="lastName" class="control-label">Last Name</label>
+                      <input id="lastName" name="lastName" type="text" class="form-control" placeholder="Last Name" required> 
+                    </div>  
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-6">
+                      <label for="email" class="control-label">Email</label>
+                      <input id="email" name="email" type="email" class="form-control" placeholder="Email address" required>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="phone" class="control-label">Phone (optional)</label>
+                      <input id="phone" name="phone" type="tel" class="form-control" placeholder="(XXX)-XXX-XXXX"> 
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <label for="comments" class="control-label">Message</label>
+                      <textarea id="comments" name="comments" class="form-control" rows="4">  </textarea>
+                    </div>
+                  </div>
+                  <button id="send" data-loading-text="Sending..." value="send" name="send" type="submit" class="btn btn-info">Send</button>
+                    <br><br>
+                </form>
+            </div>
+            <div style="height: 75px;">&nbsp;</div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+  
+
+  <!-- The footer, social media icons, and copyright -->
+  <footer class="newsletter color-2">
+    <div class="inner-page row">
+      <div class="col-md-6 social">
+        <a href="http://facebook.com/r3printingco"><i class="fa fa-facebook-square"></i></a>
+        <a href="http://twitter.com/r3printingco"><i class="fa fa-twitter"></i></a>
+      </div>
+      <div class="col-md-6 text-right copyright">
+        <a href="http://www.r3printing.com/copyright" >&copy; 2014 R3 Printing, LLC</a> &nbsp &nbsp &nbsp &nbsp <a href="#top" class="scroll">Go To Top <i class="fa fa-caret-up"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+  if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='js/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+  </script>
+
+  <!-- JQUERY END -->
+
+  <!-- Minimize in production. -->
+
+  <script src="js/bootstrap.js"></script>
+  <script src="js/lazyload.js"></script>
+  <script src="js/spin.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.history.js"></script>
+
+    <!-- Main js fail. -->
+  <script src="js/main.js"></script>
+</body>
+</html>

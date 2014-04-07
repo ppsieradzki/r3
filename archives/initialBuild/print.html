@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>R3 Printing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="The fastest, most affordable 3D printing in NYC.">
+  <meta name="author" content="R3 Printing">
+
+  <link id="bootstrap-css-file" href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link id="bootstrap-css-file" href="Bootstrap/css/bootstrap3.css" rel="stylesheet" media="screen">
+  <link id="the-story-css-file"href="css/the-story.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet/less" type="text/css" href="glyphicons.less" />
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <script src="js/ajaxfileupload.js"></script>
+  <script src="js/lazyload.js"></script>
+  <script src="js/spin.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.history.js"></script>
+  <script src="js/forms.js" ></script>
+  <script src="js/popover.js" ></script>
+  <script src="Bootstrap/js/bootstrap3.js" ></script>
+  <script src="js/main.js"></script>
+  <meta http-equiv=X-UA-Compatible content=IE=edge>   
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-col-md-offset-="50">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="navbar-container">
+<div class="navbar-header">
+<a class="navbar-brand" href="index.html">R3 Printing</a> 
+<a   class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<span class="sr-only">Toggle navigation</span>
+<i class="fa fa-bars"></i>
+</a></div>
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <li><a title="Home" class="scroll brand-1" href="#home">Home</a></li>
+    <li><a title="About Us" href="#features" class=" scroll brand-4">About Us</a></li>
+    <li><a title="Pricing" href="#assets" class="scroll brand-3">Pricing</a></li>
+    <li><a title="FAQ" href="#about" class="scroll fadeto brand-4">FAQ</a></li>
+    <li class="active"><a title="Print" href="print.html">Print</a></li>
+    <li><a title="Scan" href="scan.html">Scan</a></li>
+    <li><a title="Contact Us" href="contact.html" class="scroll fadeto brand-3">Contact</a></li>
+  </ul>
+</div>
+</div>
+</nav>
+
+  <!--  Page -->
+  <div id="Print" class="page color-4">
+  <div class="inner-page">
+      <h2 class="page-headline">Print</h2>
+      <h4 class="headline">We make the 3D printing process fast and easy. Upload your file here for an instant price quote. <br>No, you don't need to make an account.</h4>
+  </div>
+  <div class="row inner-page" style="margin-top:-50px">
+  <div class="col-md-8 col-md-offset-2">
+             
+   
+    
+  <!-- FORM -->
+  <div class="container">
+  <form class="form-horizontal" id="myForm" method="post" role="form" action="calculate.php" enctype="multipart/form-data">
+            
+            <!-- Personal Information -->
+            <div class="page-header">
+              <h1><small>Personal Information <span id="personalinfoPop" class="glyphicon glyphicon-question-sign"></span></small></h1> 
+            </div>
+            <div class="form-group">  
+              <div class="col-sm-6">
+                <label for="firstName" class="control-label"> First Name</label>
+                <input id="firstName" name="firstName" type="text" class="form-control" placeholder="First Name" required> 
+              </div>  
+
+              <div class="col-sm-6">
+                <label for="lastName" class="control-label"> Last Name</label>
+                <input id="lastName" name="lastName" type="text" class="form-control" placeholder="Last Name" required> 
+              </div>  
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-6">
+                <label for="email" class="control-label"> Email address</label>
+                <input id="email" name="email" type="email" class="form-control" placeholder="Email address" required>
+              </div>
+  
+              <div class="col-sm-6">
+                <label for="phone" class="control-label"> Phone Number (optional)</label>
+                <input id="phone" name="phone" type="tel" class="form-control" placeholder="(XXX)-XXX-XXXX" required> 
+              </div>
+            </div>
+
+            <!-- Order Information -->
+            <div class="page-header">
+              <h1><small>Order Information <span id="orderinfoPop" class="glyphicon glyphicon-question-sign"></span></small></h1> 
+            </div>
+            <div class="form-group">
+              <div class="col-sm-5"> 
+                <label for="file" class="control-label">File: <span id="filePop" class="glyphicon glyphicon-question-sign"></span></label>
+                <input id="file" name="file" type="file" accept=".stl" required>
+              </div>
+              </div>
+
+              <div class="form-group">
+              <div class="col-sm-4">
+                <label for="color" class="control-label">Color</label>
+                <select id="color" name="color" type="text" class="form-control">
+                  <option value="1">White</option>
+                  <option value="2">Black</option>
+                  <option value="3">Natural</option>
+                  <option value="4">Red</option>
+                  <option value="5">Blue</option>
+                  <option value="6">Purple</option>
+                  <option value="7">Green</option>
+                  <option value="8">Yellow</option>
+                </select>
+
+              <div class="col-sm-4">
+              <label for="material" class="control-label">Material</label>
+                <select id="material" name="material" type="text" class="form-control"> 
+                  <option value="1">Regular PLA</option>
+                  <option value="2">Flexible PLA</option>
+                </select>
+              </div>
+            
+                <label for="copies" class="control-label"> Number of Copies</label>
+                <input id="copies" value="1" name="copies" type="number" min="1" step="1" class="form-control" required> 
+              </div>
+
+              <div class="col-sm-4">
+                <label for="resolution" class="control-label"> Resolution</label>
+                <select id="resolution" name="resolution" type="text" class="form-control" placeholder="Resolution">
+                  <option value="1">Normal</option>
+                  <option value="2">High</option>
+                </select>
+              </div>
+
+              <div class="col-sm-4">
+              <label for="rush" class="control-label"> Rush Order <span id="rushPop" class="glyphicon glyphicon-question-sign"></span></label>
+                <select id="rush" name="rush" class="form-control">
+                  <option value="1">None</option>
+                  <option value="2">48-hour</option>
+                  <option value="3">72-hour</option>
+                </select>
+              </div>
+
+              <div class="col-sm-4">
+              <label for="fulfillment" class="control-label"> Fulfillment Method <span id="fulfillmentPop" class="glyphicon glyphicon-question-sign"></span></label>
+                <select id="fulfillment" name="fulfillment" class="form-control">
+                  <option value="1">Pickup</option>
+                  <option class="select-dash" disabled="disabled">----</option>
+                  <option value="2">Ship: FedEx Express (1-2 Days)</option>
+                  <option value="3">Ship: FedEx Ground (2-3 Days)</option>
+                  <option value="4">Ship: FedEx Ground (4-6 Days)</option>
+                </select>
+              </div>
+
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <label for="comments" class="control-label"> Comments</label>
+                <textarea id="comments" name="comments" class="form-control" rows="4">  </textarea>
+              </div>
+            </div>
+            
+            <label>
+                <input type="checkbox" id="terms" name="terms"> I agree to the Terms and Conditions <span id="termPop" class="glyphicon glyphicon-question-sign"></span>
+              </label>
+
+            <div class="controls">
+                <button id="submit" name="submit" type="submit" class="btn btn-primary input-medium" >Continue</button>
+                
+            </div>
+            <br><br>
+            <div id="panel" name="panel">  </div> 
+            
+
+          </form>
+          </div>
+        
+    
+    
+  </div>
+
+
+    <!-- FORM -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">R3 Printing Print Submission</h4>
+          </div>
+          <div id="modalBody" class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+
+      
+    </div>
+
+    
+
+    
+
+
+  <!-- The footer, social media icons, and copyright -->
+  <footer class="newsletter color-2">
+    <div class="inner-page row">
+      <div class="col-md-6 social">
+        <a href="http://facebook.com/r3printingco"><i class="fa fa-facebook-square"></i></a>
+        <a href="http://twitter.com/r3printingco"><i class="fa fa-twitter"></i></a>
+      </div>
+      <div class="col-md-6 text-right copyright">
+        <a href="http://google.com" >&copy; 2014 R3 Printing</a> &nbsp &nbsp &nbsp &nbsp <a href="#top" class="scroll">Go To Top <i class="fa fa-caret-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JQUERY START -->
+  <script src="js/jquery-1.7.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+  <script>
+  if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='js/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+
+  $(document).ready(function(){
+ 
+
+    // disable payment button until sent to representative (this is necessary so we can have the cost returned from server side)
+    $('#paypal').attr('disabled', 'disabled');  
+
+
+    // Disable until terms and conditions is checked  
+    if($('#terms').prop('checked')){
+         $('#submit').removeAttr('disabled');
+     }else{
+         $('#submit').attr('disabled', 'disabled');  
+     }
+
+     $('#myForm :checkbox').click(function() {
+        var $this = $(this);
+        // $this will contain a reference to the checkbox   
+        if ($this.is(':checked')) {
+          $('#submit').removeAttr('disabled');
+        } else {
+          $('#submit').attr('disabled', 'disabled');
+          $('#paypal').attr('disabled', 'disabled');
+        }
+      });
+
+
+
+
+    
+
+
+  $("#hiddenForm").ajaxForm(options2);
+  $("#myForm").ajaxForm(options);
+  $('#costPanel').hide();
+  $('#personalinfoPop').popover({
+    html: true,
+    placement:'auto',
+    content:"<h6> From our <a href='http://www.r3printing.com/privacy-policy' >Privacy Policy:</a> <br>We do not sell or share any information about you. We use your personal information only to maintain the business relationship you have with us.</h6>",
+    trigger:'click'
+  });  
+
+  $('#orderinfoPop').popover({
+    html: true,
+    placement:'auto',
+    content:"<h6> From our <a href='http://www.r3printing.com/privacy-policy' >Privacy Policy:</a> <br>Your files and intellectual property remain confidential and strictly yours. Your files are kept on our servers for only as long as it takes to fulfill your order.</h6>",
+    trigger:'click'
+  });  
+
+
+
+  $('#rushPop').popover({
+    html: true,
+    placement:'auto',
+    content:"<h6>Rush order is available only for orders of total volume less than 450 cm<sup>3</sup>. Fulfillment time specified is guaranteed time from order acceptance to pickup. <br>R3 Printing does not guarantee fulfillment time if shipping is selected as a fulfillment method.</h6>",
+    trigger:'hover click'
+  });   
+
+
+  $('#termPop').popover({
+    html: true,
+    placement:'auto',
+    content:"<h6> <a href='http://www.r3printing.com/terms-and-conditions' >Terms and Conditions:</a> <br>The printing process begins upon receipt of payment. No refunds or changes to order once payment is submitted. Please schedule a pickup time and date with an R3 Representative. <br>Errors due to scaling, support material removal, or change of file or other options after payment are not qualifications for reprinting.</h6>",
+    trigger:'hover click'
+  });
+
+
+  $('#fulfillmentPop').popover({
+    html: true,
+    placement:'auto',
+    content:"<h6>NOTE: R3 Printing is not responsible for delayed ship times. Shipping cost is calculated based on destination.</h6>",
+    trigger:'hover click'
+  });
+
+  $('#filePop').popover({
+    html: true,
+    placement:'auto',
+    content:"<h6> Select your 3D file to be printed. Your file must be in the .stl format.</h6>",
+    trigger:'hover click'
+  });
+
+
+    });
+  </script>
+
+
+  
+
+
+
+</body>
+
+</html>
