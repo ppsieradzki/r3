@@ -1,0 +1,37 @@
+/******************************************************************************
+#                      PHP Paypal Payment Terminal v1.0
+#******************************************************************************
+#      Author:     Sergey Suhanov
+#      Email:      admin@rxnk.com
+#      Website:    http://www.rxnk.com
+#	
+#
+#      Version:    1.0
+#      Copyright:  (c) 2009 - Sergey Suhanov 
+#      
+#*******************************************************************************/
+	
+
+	/**** MAIN STYLES ****/
+	 body {font-size:16px;  font-family: Helvetica, Arial, sans-serif; color:#069;}
+	 .wrapper {  padding:15px; margin-top:20px; }
+	 h1 {font-size:18px;}
+	 .error { font-size:12px; font-family:Helvetica, Arial, sans-serif; color:#F30; font-weight:bold; padding:5px; border:1px solid #F30;}
+	 #form-content {width: 290px;margin: 0 auto;font-size:16px; 	}			
+	 #form-content label {color: #069;font-size:14px; float: left;width: 70px;	}
+	 #form-content input {width: 200px; float:right;}		
+	 #form-content select {width: 205px;float: right;}   
+	 #form-content p {padding: 0;} 
+	 #form-content .clear { clear: both; }
+
+	
+	/**** PROCESSING PAGE (REDIRECTION) ****/
+	.wait_msg { font-size:16px; }
+	.submitProcessing {float:none;}
+	
+	/**** THANK YOU PAGE ****/
+	.success {font-size:16px;  color:#06C; font-weight:bold;}
+	#form-content .cancelled {font-size:16px;  color:#F30; font-weight:bold;font-family:Helvetica, Arial, sans-serif; text-align:center;}
+	#form-content a { color:#069; }
+	
+	
