@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>R3 Printing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="The fastest, most affordable 3D print and scan in NYC.">
+  <meta name="author" content="R3 Printing">
+
+  <!-- Load The Story -->
+  <link id="the-story-css-file" href="css/the-story.min.css" rel="stylesheet" media="screen">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+
+<meta http-equiv=X-UA-Compatible content=IE=edge>
+<script src="lib/js/jquery-1.9.1.min.js"></script>
+  <script src="lib/js/forms.js"></script>
+  <script src="lib/js/ajaxfileupload.js"></script>
+  <script>
+  if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='lib/js/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+  </script>
+  <script>
+        $(document).ready(function(){
+              $('.message').click(function(){       
+                  $(this).animate({top: -$(this).outerHeight()}, 500);
+              });
+              // Make send button change into "loading":
+              $('#send').on('click', function () {
+               $('#send').button('loading');
+               });
+              var options = { 
+                complete: function(response) 
+                {
+                    $('#modalBody').html(response.responseText);
+                    $('#myModal').modal({show:true});
+                    $('#send').button('reset');
+                }
+              }; 
+             $('#myForm').ajaxForm(options);
+        });   
+   </script>
+</head>
+
+<body id="top" data-spy="scroll" data-offset="50">
+
+  <!-- Home Page -->
+  <div id="Home" class="newsletter color-1">
+    <div class="inner-page">
+      <h2 class="page-headline">We're under construction! Check back soon.</h2>
+    </div>
+  </div>
+
+  <!-- Minimize in production. -->
+
+  <script src="lib/js/bootstrap.js"></script>
+  <script src="lib/js/lazyload.js"></script>
+  <script src="lib/js/spin.js"></script>
+  <script src="lib/js/bootstrap.js"></script>
+  <script src="lib/js/lightbox.js"></script>
+  <script src="lib/js/bootstrap.js"></script>
+  <script src="lib/js/jquery.history.js"></script>
+
+    <!-- Main js fail. -->
+  <script src="lib/js/main.js"></script>
+</body>
+</html>
